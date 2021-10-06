@@ -19,19 +19,23 @@ export class LeftMenuComponent implements OnInit {
 
   public sideNavState: boolean = false;
   public linkText: boolean = false;
-
+  
   public pages: Page[] = [
     {name: 'Turnos', link:'some-link', icon: 'post_add'},
     {name: 'Cancelar', link:'some-link', icon: 'delete_outline'},
     {name: 'Consulta', link:'some-link', icon: 'send'},
   ]
 
-  constructor(private _sidenavService: SidenavService) { }
+  constructor(private _sidenavService: SidenavService) 
+  {
+   debugger;
+  }
 
   ngOnInit() {
   }
 
   onSinenavToggle() {
+    debugger;
     this.sideNavState = !this.sideNavState
 
     setTimeout(() => {
